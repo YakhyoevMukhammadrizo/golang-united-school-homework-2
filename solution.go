@@ -20,7 +20,7 @@ const SidesSquare shape = 4
 func CalcSquare(sideLen float64, sidesNum shape) float64 {
 	switch sidesNum {
 	case SidesCircle:
-		return math.Pi * math.Pi * sideLen
+		return math.Pi * sideLen * sideLen
 	case SidesTriangle:
 		return (math.Sqrt(3.0) / 4) * math.Pow(sideLen, 2)
 	case SidesSquare:
